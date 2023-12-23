@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:id="container_Request" spacing="20">
+    <VBox spacing="10" styleClass="wrap-form-general">
+        <Label text=" Request Users" styleClass="lb-title-Form"/>
+        <VBox>
+            <Label text="Observations:" styleClass="lbl-subTitle-form"/>
+            <TextArea styleClass="txtArea-description" fx:id="txtObservations"/>
+        </VBox>
+        <VBox>
+            <Label text="Additional Cost:" styleClass="lbl-subTitle-form"/>
+            <TextField promptText="999,999,999" styleClass="txt-form" fx:id="txtCostA"/>
+        </VBox>
+        <VBox>
+            <Label text="Final Cost:" styleClass="lbl-subTitle-form"/>
+            <TextField promptText="999,999,999" styleClass="txt-form" fx:id="txtCostF"/>
+        </VBox>
+        <Button text="Send" styleClass="btn-Save" maxWidth="Infinity" fx:id="btnSave"/>
+    </VBox>
+    <Button fx:id="btnReturn" styleClass="btn-Return">
+        <graphic>
+            <FontIcon iconLiteral="bi-chevron-left" iconSize="20" iconColor="#575757"/>
+        </graphic>
+    </Button>
+</VBox>

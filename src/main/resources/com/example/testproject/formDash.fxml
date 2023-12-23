@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color:#fff;" fx:id="contentMain2">
+    <GridPane VBox.vgrow="ALWAYS">
+    <columnConstraints>
+        <ColumnConstraints percentWidth="20"/>
+        <ColumnConstraints percentWidth="80"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints  vgrow="ALWAYS"/>
+    </rowConstraints>
+    <VBox GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="wrapper-left">
+        <HBox alignment="CENTER" styleClass="dash-Logo">
+            <ImageView fx:id="imgLogo" fitHeight="80" fitWidth="80"/>
+            <Label text="|  Moving Services" styleClass="lblLogo"/>
+        </HBox>
+        <VBox VBox.vgrow="ALWAYS" style="-fx-padding:0 0 50px 0;" fx:id="container_Dash">
+            <ToggleButton  maxWidth="Infinity" styleClass="btn-dash" fx:id="btnDashBoard" selected="true">
+                <graphic>
+                    <HBox alignment="CENTER_LEFT" spacing="25" styleClass="dash-hP">
+                        <FontIcon  iconLiteral="bi-grid-1x2" iconSize="25" iconColor="#696969" styleClass="icon"/>
+                        <Label text="DashBoard"/>
+                    </HBox>
+                </graphic>
+            </ToggleButton>
+            <ToggleButton  maxWidth="Infinity" styleClass="btn-dash" fx:id="btnHome" >
+                <graphic>
+                    <HBox alignment="CENTER_LEFT" spacing="25" styleClass="dash-hP">
+                        <FontIcon  iconLiteral="bi-house-door" iconSize="25" iconColor="#696969" styleClass="icon"/>
+                        <Label text="Home"/>
+                    </HBox>
+                </graphic>
+            </ToggleButton>
+            <ToggleButton  maxWidth="Infinity" styleClass="btn-dash" fx:id="btnServices" >
+                <graphic>
+                    <HBox alignment="CENTER_LEFT" spacing="25" styleClass="dash-hP">
+                        <FontIcon  iconLiteral="bi-truck" iconSize="25" iconColor="#696969" styleClass="icon"/>
+                        <Label text="Services"/>
+                    </HBox>
+                </graphic>
+            </ToggleButton>
+            <ToggleButton maxWidth="Infinity"  styleClass="btn-dash" fx:id="btnMoving">
+                <graphic>
+                    <HBox alignment="CENTER_LEFT" spacing="25" styleClass="dash-hP">
+                        <FontIcon iconLiteral="bi-box-seam" iconSize="25" iconColor="#696969" styleClass="icon"/>
+                        <Label text="Moving Request"/>
+                    </HBox>
+                </graphic>
+            </ToggleButton>
+            <ToggleButton maxWidth="Infinity"  styleClass="btn-dash" fx:id="btnRequest">
+                <graphic>
+                    <HBox alignment="CENTER_LEFT" spacing="25" styleClass="dash-hP">
+                        <FontIcon iconLiteral="bi-box-seam" iconSize="25" iconColor="#696969" styleClass="icon"/>
+                        <Label text="Request Moving"/>
+                    </HBox>
+                </graphic>
+            </ToggleButton>
+            <ToggleButton  maxWidth="Infinity"  styleClass="btn-dash" fx:id="btnMessages">
+                <graphic>
+                    <HBox alignment="CENTER_LEFT" spacing="25" styleClass="dash-hP">
+                        <FontIcon iconLiteral="bi-chat-left-text" iconSize="25" iconColor="#696969" styleClass="icon"/>
+                        <Label text="Messages"/>
+                    </HBox>
+                </graphic>
+            </ToggleButton>
+            <ToggleButton  maxWidth="Infinity"  styleClass="btn-dash" fx:id="btnPending">
+                <graphic>
+                    <HBox alignment="CENTER_LEFT" spacing="25" styleClass="dash-hP">
+                        <FontIcon iconLiteral="bi-receipt" iconSize="25" iconColor="#696969" styleClass="icon"/>
+                        <Label text="Pending Request"/>
+                    </HBox>
+                </graphic>
+            </ToggleButton>
+            <ToggleButton  maxWidth="Infinity" styleClass="btn-dash" fx:id="btnShowInfo">
+                <graphic>
+                    <HBox alignment="CENTER_LEFT" spacing="25" styleClass="dash-hP">
+                        <FontIcon iconLiteral="bi-list-ul" iconSize="25" iconColor="#696969" styleClass="icon"/>
+                        <Label text="Company Information"/>
+                    </HBox>
+                </graphic>
+            </ToggleButton>
+            <ToggleButton  maxWidth="Infinity" styleClass="btn-dash" fx:id="btnRegisterE">
+                <graphic>
+                    <HBox alignment="CENTER_LEFT" spacing="25" styleClass="dash-hP">
+                        <FontIcon iconLiteral="bi-person-square" iconSize="25" iconColor="#696969" styleClass="icon"/>
+                        <Label text="Register Employee"/>
+                    </HBox>
+                </graphic>
+            </ToggleButton>
+            <VBox VBox.vgrow="ALWAYS" alignment="BOTTOM_CENTER">
+                <ToggleButton  maxWidth="Infinity"  styleClass="btn-dash" fx:id="btnLogOut">
+                    <graphic>
+                        <HBox alignment="CENTER_LEFT" spacing="25" styleClass="dash-hP">
+                            <FontIcon iconLiteral="bi-door-open-fill" iconSize="25" iconColor="#696969" styleClass="icon"/>
+                            <Label text="Log out"/>
+                        </HBox>
+                    </graphic>
+                </ToggleButton>
+            </VBox>
+       </VBox>
+   </VBox>
+   <VBox GridPane.rowIndex="0" GridPane.columnIndex="1"  style="-fx-background-color:#fff;">
+       <HBox styleClass="title-form">
+           <HBox HBox.hgrow="ALWAYS" alignment="CENTER_LEFT">
+               <Label text="Services" styleClass="lb-tab-title" fx:id="lbl_Tab_Title" />
+           </HBox>
+       </HBox>
+       <VBox fx:id="contentMain" VBox.vgrow="ALWAYS" style="-fx-padding:50px;">
+
+       </VBox>
+   </VBox>
+   </GridPane>
+</VBox>

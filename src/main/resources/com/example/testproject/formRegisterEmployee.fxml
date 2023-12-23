@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" alignment="CENTER">
+    <VBox alignment="CENTER_LEFT" spacing="10" styleClass="wrap-form-general">
+        <HBox alignment="CENTER_LEFT" style="-fx-padding:0 0 10px 0;">
+            <Label text=" + Add Employee" styleClass="lb-title-Form"/>
+        </HBox>
+        <VBox>
+            <Label text="Login Employee:" styleClass="lbl-subTitle-form"/>
+            <TextField promptText="Login" styleClass="txt-form" fx:id="txtLogin"/>
+        </VBox>
+        <VBox>
+            <Label text="Name:" styleClass="lbl-subTitle-form"/>
+            <TextField promptText="example" styleClass="txt-form" fx:id="txtName"/>
+        </VBox>
+        <VBox>
+            <Label text="Password:" styleClass="lbl-subTitle-form"/>
+            <PasswordField promptText="12345" styleClass="txt-form" fx:id="txtPassword"/>
+        </VBox>
+        <VBox>
+            <Label text="Phone:" styleClass="lbl-subTitle-form"/>
+            <TextField promptText="999-999-9999" styleClass="txt-form" fx:id="txtPhone"/>
+        </VBox>
+        <VBox>
+            <Label text="Email:" styleClass="lbl-subTitle-form"/>
+            <TextField promptText="example@gmail.com" styleClass="txt-form" fx:id="txtEmail"/>
+        </VBox>
+        <Button text="Save" styleClass="btn-Save" maxWidth="Infinity" fx:id="btnSave"/>
+    </VBox>
+</VBox>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.image.ImageView?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.Tab?>
+<ScrollPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.testproject.HelloController" fitToHeight="true" fitToWidth="true"
+            style="-fx-background-color: transparent;" prefWidth="800" prefHeight="800" fx:id="main_Scroll">
+    <StackPane fx:id="main_Stackpane"  alignment="CENTER">
+<BorderPane fx:id="body" styleClass="wrapper-main">
+            <top>
+                <GridPane styleClass="wrapper-top">
+                    <columnConstraints>
+                        <ColumnConstraints percentWidth="40"/>
+                        <ColumnConstraints percentWidth="60"/>
+                    </columnConstraints>
+                    <HBox GridPane.rowIndex="0" GridPane.columnIndex="0"  alignment="CENTER_LEFT">
+                        <ImageView fx:id="imgLogo" fitHeight="100" fitWidth="100"/>
+                        <Label text="|  Moving Services" styleClass="lblLogo"/>
+                    </HBox>
+                    <VBox GridPane.columnIndex="1" GridPane.rowIndex="0" alignment="CENTER">
+                        <HBox spacing="20" alignment="CENTER_RIGHT">
+                            <Button text="Sign In" styleClass="btn-sign" fx:id="B_btnSignIn"/>
+                        </HBox>
+                    </VBox>
+                </GridPane>
+            </top>
+            <center>
+                <GridPane alignment="CENTER" styleClass="wrapper-center">
+                    <columnConstraints>
+                        <ColumnConstraints percentWidth="50"/>
+                        <ColumnConstraints percentWidth="50"/>
+                    </columnConstraints>
+                    <VBox  GridPane.rowIndex="0"  GridPane.columnIndex="0" styleClass="wrapper-title" fx:id="wrapper_title">
+                        <VBox  styleClass="wrapper-title-2" spacing="8">
+                            <Label text="Create Your &#10;First Move &#10;Request" styleClass="lblTitle" fx:id="lblTitle"/>
+                            <Label wrapText="true"  styleClass="lblDesc" fx:id="lblDesc">
+                                Our information system allows you to request the transport of your cars, household furniture,
+                                office things and count on our packers and carriers to facilitate your move.
+                            </Label>
+                            <Button text="Get Started" styleClass="btn-start" fx:id="btnGetStart"/>
+                        </VBox>
+                        <VBox>
+                            <HBox spacing="15" alignment="CENTER">
+                                <Button styleClass="btn-media">
+                                    <graphic>
+                                        <FontIcon iconLiteral="bi-twitter" iconSize="25" iconColor="#FFBA00" />
+                                    </graphic>
+                                </Button>
+                                <Button styleClass="btn-media" >
+                                    <graphic>
+                                        <FontIcon iconLiteral="bi-instagram" iconSize="25" iconColor="#FFBA00"/>
+                                    </graphic>
+                                </Button>
+                                <Button styleClass="btn-media">
+                                    <graphic>
+                                        <FontIcon iconLiteral="bi-facebook" iconSize="25" iconColor="#FFBA00"/>
+                                    </graphic>
+                                </Button>
+                            </HBox>
+                        </VBox>
+                    </VBox>
+                    <VBox GridPane.rowIndex="0" GridPane.columnIndex="1"  alignment="CENTER" styleClass="wrapper-load">
+                        <ImageView fx:id="imgLoad" fitHeight="820" fitWidth="820"  styleClass="imgLoad">
+                        </ImageView>
+                    </VBox>
+                </GridPane>
+            </center>
+            <bottom>
+                <VBox alignment="CENTER">
+                    <Label text="&#169; Copyright" styleClass="lblCopy"/>
+                </VBox>
+            </bottom>
+</BorderPane>
+            <VBox style="-fx-background-color: rgba(0, 0, 0, 0.3);" alignment="CENTER" fx:id="w_Login" onMouseClicked="#closeLogin">
+                <VBox styleClass="wrap-Login" maxWidth="500" minHeight="300"  fx:id="sub_w_Login">
+                    <TabPane fx:id="tabPane" tabClosingPolicy="UNAVAILABLE" tabDragPolicy="FIXED" tabMaxWidth="Infinity">
+                        <Tab text="  Sign In" styleClass="wrap-Tap" onSelectionChanged="#changeTab1" fx:id="tab1">
+                            <graphic>
+                                <FontIcon iconLiteral="bi-person-fill" iconSize="20"  iconColor="#FFBA00"/>
+                            </graphic>
+                                    <VBox spacing="10" fx:id="contentL">
+                                        <VBox>
+                                            <Label text="Hi, Welcome Back!" styleClass="lbl-title-Login"/>
+                                            <Label text="Enter your details below" styleClass="lbl-subTitle-Login"/>
+                                        </VBox>
+                                        <VBox>
+                                            <Label text="Login"  styleClass="lbl-Login"/>
+                                            <TextField promptText="UserName"  styleClass="txt-Login" fx:id="txtLogin"/>
+                                        </VBox>
+                                        <VBox>
+                                            <Label text="Password" styleClass="lbl-Login"/>
+                                            <StackPane alignment="CENTER_RIGHT" fx:id="show_PassStackPane">
+                                                <PasswordField promptText="Password" styleClass="txt-Login" fx:id="txtPassword" />
+                                                <VBox style="-fx-padding:0 10px 0 0;" maxWidth="NaN" alignment="CENTER">
+                                                    <Button  styleClass="btn-show-Pass" fx:id="btnShowPass" onAction="#onShowPass">
+                                                        <graphic>
+                                                            <FontIcon iconLiteral="bi-eye-slash-fill" iconSize="20" iconColor="#b1b1b1" fx:id="L_iconPass"/>
+                                                        </graphic>
+                                                    </Button>
+                                                </VBox>
+                                            </StackPane>
+                                        </VBox>
+                                        <Button text="Sing In" maxWidth="Infinity" styleClass="btn-Login" fx:id="L_btnSignIn"/>
+                                        <VBox alignment="CENTER">
+                                            <Label  text="Forgot password?" styleClass="lbl-forgot-Login"/>
+                                        </VBox>
+                                        <VBox  alignment="CENTER">
+                                            <Label text="" fx:id="L_lblInformation">
+                                                <graphic>
+                                                    <FontIcon fx:id="L_icon" iconSize="15"/>
+                                                </graphic>
+                                            </Label>
+                                        </VBox>
+                                    </VBox>
+                        </Tab>
+                        <Tab text="  Sign Up" styleClass="wrap-Tap" onSelectionChanged="#changeTab2" fx:id="tab2">
+                            <graphic>
+                                <FontIcon iconLiteral="bi-person-plus-fill" iconSize="20"  iconColor="#FFBA00"/>
+                            </graphic>
+                            <VBox spacing="10" fx:id="contentR">
+                                <VBox>
+                                    <Label text="Get Start!" styleClass="lbl-title-Login"/>
+                                    <Label text="Create your account now" styleClass="lbl-subTitle-Login"/>
+                                </VBox>
+                                <VBox>
+                                    <Label text="Email Address"  styleClass="lbl-Login"/>
+                                    <TextField promptText="example@gmail.com"  styleClass="txt-Login" fx:id="txtEmail"/>
+                                </VBox>
+                                <VBox>
+                                    <Label text="Your Name"  styleClass="lbl-Login"/>
+                                    <TextField promptText="Name"  styleClass="txt-Login" fx:id="R_txtUsername"/>
+                                </VBox>
+                                <VBox>
+                                    <Label text="Your Login Username"  styleClass="lbl-Login"/>
+                                    <TextField promptText="Username"  styleClass="txt-Login" fx:id="R_txtLoginUsername"/>
+                                </VBox>
+                                <VBox>
+                                    <Label text="Phone"  styleClass="lbl-Login"/>
+                                    <TextField promptText="999-999-9999"  styleClass="txt-Login" fx:id="txtPhone"/>
+                                </VBox>
+                                <VBox>
+                                    <Label text="Password" styleClass="lbl-Login"/>
+                                    <StackPane alignment="CENTER_RIGHT" fx:id="R_show_PassStackPane">
+                                        <PasswordField promptText="Password" styleClass="txt-Login" fx:id="R_txtPassword" />
+                                        <VBox style="-fx-padding:0 10px 0 0;" maxWidth="NaN" alignment="CENTER">
+                                            <Button  styleClass="btn-show-Pass" fx:id="R_btnShowPass" onAction="#onR_ShowPass">
+                                                <graphic>
+                                                    <FontIcon iconLiteral="bi-eye-slash-fill" iconSize="20" iconColor="#b1b1b1" fx:id="R_iconPass"/>
+                                                </graphic>
+                                            </Button>
+                                        </VBox>
+                                    </StackPane>
+                                </VBox>
+                                <Button text="Sing Up" maxWidth="Infinity" styleClass="btn-Login" fx:id="L_btnSignUp"/>
+                                <VBox alignment="CENTER" fx:id="R_wrapInfo" >
+                                    <Label text="" fx:id="R_lblInformation">
+                                        <graphic>
+                                            <FontIcon  iconSize="15"  fx:id="R_icon"/>
+                                        </graphic>
+                                    </Label>
+                                </VBox>
+                            </VBox>
+                        </Tab>
+                    </TabPane>
+                </VBox>
+          </VBox>
+   </StackPane>
+</ScrollPane>

@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Poppins:wght@300;500;600&display=swap');
+
+
+*{
+  -fx-font-family: 'Poppins',sans-serif;
+
+}
+
+.wrapper-main{
+   -fx-background-color:white;
+}
+
+/*-------------- top Elements --------------*/
+
+.wrapper-top{
+  -fx-padding:0 5em;
+}
+
+.lblLogo{
+    -fx-font-weight:bold;
+    -fx-font-size: 18px;
+    -fx-text-fill:#010101;
+}
+
+/*Menu */
+
+
+.btn-sign{
+   -fx-text-fill: #FFBA00;
+   -fx-background-color:#232323;
+   -fx-padding: 15px 50px;
+   -fx-font-weight:700;
+   -fx-background-radius:20px;
+   -fx-font-size:14px;
+}
+
+.btn-sign:hover{
+   -fx-cursor: hand;
+   -fx-effect: dropshadow(gaussian, #BC9400, 15, 0.2, 0, 0);
+
+}
+
+/*-------------- center Elements --------------*/
+
+/* center left 50%*/
+
+.wrapper-center{
+ -fx-padding: 0 80px 0 80px;
+}
+
+.wrapper-title{
+   -fx-padding: 100px;
+}
+
+.wrapper-title-2{
+  -fx-padding:40px;
+}
+
+.lblTitle{
+ -fx-font-size: 82px;
+ -fx-font-weight:700;
+ -fx-text-fill: #3F3F3F;
+ -fx-line-spacing: -0.4em;
+}
+
+.lblDesc{
+   -fx-font-size: 20px;
+   -fx-padding: 0.31333em 0px;
+   -fx-font-weight:700;
+   -fx-text-fill:#b1b1b1;
+}
+
+.btn-start{
+    -fx-background-radius:30px;
+    -fx-padding:15px 30px;
+    -fx-font-weight:bold;
+    -fx-font-size: 15px;
+    -fx-border-width:0;
+    -fx-background-color:#FFBA00;
+    -fx-text-fill:white;
+    -fx-font-weight:bold;
+    -fx-background-color: linear-gradient(to bottom, #FFBA00, #FFA200);
+    -fx-background-radius: 50;
+    -fx-padding: 15px 30px;
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, #aaaaaa, 20, 0.2, 8, 8);
+
+}
+
+.btn-start:hover{
+     -fx-background-color: linear-gradient(to right, #E5A700, #E69200);
+     -fx-cursor: hand;
+
+}
+
+.btn-media{
+    -fx-background-radius:50%;
+    -fx-background-color:#232323;
+    -fx-padding: 15px;
+    -fx-effect: dropshadow(gaussian, #BC9400, 10, 0.2, 0, 0);
+}
+
+.btn-media:hover{
+   -fx-background-color:#FFFEDE;
+   -fx-cursor: hand;
+}
+
+/* center right*/
+
+.imgLoad{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 20, 0.3, 0, 0);
+}
+
+/* Bottom Elements */
+
+.lblCopy{
+  -fx-font-size: 10px;
+  -fx-padding: 0px 20px;
+  -fx-font-weight:700;
+  -fx-text-fill:#b1b1b1;
+}
+
+
+/* -------------- Login -------------- */
+
+.wrap-Login{
+    -fx-background-color:#fff;
+    -fx-padding:20px 30px;
+    -fx-effect: dropshadow(gaussian, #232323, 15, 0.2, 0, 0);
+    -fx-background-radius:20px;
+}
+
+.lbl-Login{
+ -fx-text-fill:#494949;
+ -fx-font-weight:700;
+ -fx-padding:0 0 0 5px;
+}
+
+.lbl-forgot-Login{
+  -fx-text-fill:#b1b1b1;
+  -fx-font-weight:700;
+  -fx-font-size:13px;
+  -fx-padding:10px 0 0 0;
+  -fx-cursor: hand;
+}
+
+.lbl-title-Login{
+  -fx-text-fill:#434343;
+  -fx-font-size:25px;
+  -fx-padding:20px 0 0 5px;
+  -fx-font-weight:700;
+}
+
+.lbl-subTitle-Login{
+  -fx-padding:0 0 8px 5px;
+  -fx-font-size:15px;
+  -fx-text-fill:#626262;
+}
+
+.txt-Login{
+    -fx-background-color:transparent;
+    -fx-padding:10px 20px;
+    -fx-border-color: #EDF1F4;
+    -fx-border-width: 2px;
+    -fx-border-radius: 15px;
+}
+
+.txt-Login:focused{
+   -fx-border-color: #00A0FF;
+}
+
+.btn-Login{
+  -fx-background-color:#232323;
+  -fx-text-fill:#fff;
+  -fx-background-radius: 20px;
+  -fx-padding:12px;
+  -fx-font-size:13px;
+  -fx-font-weight:700;
+  -fx-cursor: hand;
+}
+
+.btn-Login:hover{
+ -fx-background-color:#000;
+ -fx-text-fill:#FFBA00;
+}
+
+
+.btn-show-Pass{
+    -fx-background-color:transparent;
+    -fx-cursor: hand;
+}
+
+.tab-header-background {
+    -fx-background-color: #fff;
+}
+
+.wrap-Tap{
+ -fx-background-color:transparent;
+ -fx-padding:10px 50px;
+ -fx-font-size:13px;
+ -fx-font-weight:700;
+}
+
+.tab-label{
+  -fx-text-fill:#b1b1b1;
+}
+
+.tab:selected .tab-label{
+ -fx-text-fill:#35444D;
+}
+
+.tab-pane .tab:selected{
+    -fx-background-color:#FFFEF3;
+    -fx-border:solid;
+    -fx-font-size:13px;
+    -fx-border-width: 0 0 3 0;
+    -fx-border-color:#FFBA00;
+    -fx-font-weight:700;
+}
+
+.tab-pane .tab:selected .focus-indicator {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+
+}
+
+.lbl-Error{
+    -fx-padding:0 0 0px 5px;
+    -fx-text-fill:#FF2929;
+    -fx-font-size:14px;
+}
+
+.lbl-Valid{
+ -fx-text-fill:#00D783;
+ -fx-font-size:14px;
+}

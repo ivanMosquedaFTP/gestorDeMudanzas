@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"  fx:id="form_Table" spacing="25">
+    <HBox  maxWidth="Infinity" spacing="5" alignment="CENTER_RIGHT">
+       <HBox styleClass="wrap-op-Service">
+           <Button styleClass="btn-Service" fx:id="btnAddService" style="-fx-background-radius:20px 0 0 20px;">
+               <graphic>
+                   <FontIcon iconLiteral="bi-plus-square-fill" iconColor="#006dff" iconSize="15"/>
+               </graphic>
+           </Button>
+           <Button styleClass="btn-Service" fx:id="btnEditService" style="-fx-border-width:0 2 0 2; -fx-border-color:#f1f1f1;">
+               <graphic>
+                   <FontIcon iconLiteral="bi-pencil-square" iconColor="#006dff" iconSize="15"/>
+               </graphic>
+           </Button>
+           <Button styleClass="btn-Service" fx:id="btnDeleteService" style="-fx-background-radius:0 20px 20px 0;">
+               <graphic>
+                   <FontIcon iconLiteral="bi-dash-square-fill" iconColor="#006dff" iconSize="15"/>
+               </graphic>
+           </Button>
+       </HBox>
+    </HBox>
+        <TableView fx:id="tblService">
+            <columns>
+                <TableColumn text="ID" fx:id="col1">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="IdServicio"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Description" fx:id="col2">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="Descripcion"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Status" fx:id="col3">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="Status"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="IMG" fx:id="col4">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="Imagen"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Cost" fx:id="col5">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="Costo"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Creation Date" fx:id="col6">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="FechaCreacion"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+</VBox>
