@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.Button?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleButton?>
+<GridPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"  fx:id="body_Messsage">
+    <columnConstraints>
+        <ColumnConstraints percentWidth="100"/>
+        <ColumnConstraints percentWidth="0"/>
+    </columnConstraints>
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="0" style="-fx-padding:5px;">
+        <HBox style="-fx-padding:10px" alignment="CENTER" spacing="10">
+            <ToggleButton text="News" styleClass="btn-change-messages" selected="true" fx:id="btnNew"/>
+            <ToggleButton text="Hidden" styleClass="btn-change-messages" fx:id="btnHide"/>
+        </HBox>
+        <ScrollPane fitToHeight="true" fitToWidth="true" style="-fx-background-color:transparent; -fx-padding:0 8px 0 8px;">
+        <VBox styleClass="wrap-Messages" fx:id="content_Users">
+
+        </VBox>
+        </ScrollPane>
+    </VBox>
+    <VBox GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="border-Messages"  fx:id="content_Message" visible="false" spacing="10">
+        <HBox styleClass="wrap-title-User" maxWidth="Infinity" alignment="CENTER_LEFT">
+            <HBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                <Button styleClass="lbl-Image-User" style="-fx-background-color:transparent;">
+                    <graphic>
+                        <FontIcon iconLiteral="bi-person-fill"  iconSize="20" iconColor="dimgrey"/>
+                    </graphic>
+                </Button>
+                <Label text="User" styleClass="lbl-User" fx:id="lbl_NameUser"/>
+            </HBox>
+            <HBox alignment="CENTER" fx:id="hiddenButton">
+                <Button styleClass="btn-Return" fx:id="btnHidden">
+                    <graphic>
+                        <FontIcon iconLiteral="bi-folder-symlink" iconSize="20" iconColor="dimgrey"/>
+                    </graphic>
+                </Button>
+            </HBox>
+        </HBox>
+        <ScrollPane fitToHeight="true" fitToWidth="true" style="-fx-background-color: transparent;">
+            <VBox styleClass="wrap-content-Messages" spacing="10" fx:id="content_ShowMessages" VBox.vgrow="ALWAYS" maxWidth="Infinity">
+
+            </VBox>
+        </ScrollPane>
+        <HBox  spacing="20" maxWidth="Infinity" alignment="CENTER">
+            <TextArea HBox.hgrow="ALWAYS" promptText="Type here..." styleClass="txt-Message" prefHeight="10" wrapText="true" fx:id="txtMessage"/>
+            <Button styleClass="btn-Send" fx:id="btnSend">
+                <graphic>
+                    <FontIcon iconLiteral="bi-cursor-fill" iconSize="20" iconColor="#0683F2" styleClass="icon-send"/>
+                </graphic>
+            </Button>
+        </HBox>
+    </VBox>
+</GridPane>

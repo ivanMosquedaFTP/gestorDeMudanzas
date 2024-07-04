@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="TestProject:test" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="com.example" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output-test url="file://$MODULE_DIR$/../../build/classes/java/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../src/test" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="TestProject.main" />
+    <orderEntry type="library" name="Gradle: org.openjfx:javafx-fxml:linux:19" level="project" />
+    <orderEntry type="library" name="Gradle: org.openjfx:javafx-controls:19" level="project" />
+    <orderEntry type="library" name="Gradle: org.openjfx:javafx-controls:linux:19" level="project" />
+    <orderEntry type="library" name="Gradle: org.openjfx:javafx-graphics:19" level="project" />
+    <orderEntry type="library" name="Gradle: org.openjfx:javafx-graphics:linux:19" level="project" />
+    <orderEntry type="library" name="Gradle: org.openjfx:javafx-base:19" level="project" />
+    <orderEntry type="library" name="Gradle: org.openjfx:javafx-base:linux:19" level="project" />
+    <orderEntry type="library" name="Gradle: org.postgresql:postgresql:42.1.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.kordamp.ikonli:ikonli-javafx:12.3.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.kordamp.ikonli:ikonli-bootstrapicons-pack:12.3.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-core:2.20.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-api:2.20.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-simple:2.0.7" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:2.0.7" level="project" />
+    <orderEntry type="library" name="Gradle: org.junit.jupiter:junit-jupiter-api:5.9.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.kordamp.ikonli:ikonli-core:12.3.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:barcodes:7.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:font-asian:7.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:sign:7.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:forms:7.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:hyph:7.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:svg:7.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:styled-xml-parser:7.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:layout:7.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:pdfa:7.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:kernel:7.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:io:7.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.junit.platform:junit-platform-commons:1.9.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.opentest4j:opentest4j:1.2.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apiguardian:apiguardian-api:1.1.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.bouncycastle:bcpkix-jdk15on:1.70" level="project" />
+    <orderEntry type="library" name="Gradle: org.bouncycastle:bcprov-jdk15on:1.70" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:commons:7.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.bouncycastle:bcutil-jdk15on:1.70" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.9.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.platform:junit-platform-engine:1.9.1" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="TestProject.main" />
+</module>

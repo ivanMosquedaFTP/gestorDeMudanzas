@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+
+    <VBox spacing="10" alignment="CENTER_LEFT" styleClass="wrap-form-general">
+        <HBox  style="-fx-padding:0 0 10px 0;">
+            <Label text="Applicant Info" styleClass="lb-title-Form"/>
+        </HBox>
+        <VBox>
+            <Label text="Service:" styleClass="lbl-subTitle-form"/>
+            <ComboBox fx:id="cmbService" styleClass="txt-form" style="-fx-padding:6px;" maxWidth="Infinity">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                    </FXCollections>
+                </items>
+            </ComboBox>
+        </VBox>
+        <VBox>
+            <Button text="List of Services" styleClass="btnReport" fx:id="btnServicesPdf" alignment="CENTER" maxWidth="Infinity"/>
+        </VBox>
+        <VBox>
+            <Label text="Origin:" styleClass="lbl-subTitle-form"/>
+            <TextField promptText="Origin" styleClass="txt-form" fx:id="txtOrigin"/>
+        </VBox>
+        <VBox>
+            <Label text="Destiny:" styleClass="lbl-subTitle-form"/>
+            <TextField promptText="Destiny" styleClass="txt-form" fx:id="txtDestiny"/>
+        </VBox>
+        <VBox>
+            <Label text ="Due Date:" styleClass="lbl-subTitle-form"/>
+            <DatePicker fx:id="txtDueDate" styleClass="txt-form" maxWidth="Infinity"/>
+        </VBox>
+        <VBox>
+            <Button text="Make request" styleClass="btn-Save" fx:id="btnMakeRequest" alignment="CENTER" maxWidth="Infinity"/>
+        </VBox>
+    </VBox>
+</VBox>

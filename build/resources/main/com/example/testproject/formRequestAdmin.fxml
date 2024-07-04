@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:id="form_TableR" spacing="25" >
+    <HBox  maxWidth="Infinity" spacing="5" alignment="CENTER_RIGHT">
+        <HBox styleClass="wrap-op-Service">
+            <Button styleClass="btn-Service" fx:id="btnEditRequest" style="-fx-border-width:2;  -fx-border-color:#f1f1f1;">
+                <graphic>
+                    <FontIcon iconLiteral="bi-pencil-square" iconColor="#006dff" iconSize="15"/>
+                </graphic>
+            </Button>
+        </HBox>
+    </HBox>
+    <TableView fx:id="tblRequest">
+        <columns>
+            <TableColumn text="ID REQUEST" fx:id="col1">
+                <cellValueFactory>
+                    <PropertyValueFactory property="IdSolicitud"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="ID USER" fx:id="col2">
+                <cellValueFactory>
+                    <PropertyValueFactory property="IdUsuario"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="ID SERVICE" fx:id="col3">
+                <cellValueFactory>
+                    <PropertyValueFactory property="IdServicio"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="ORIGIN" fx:id="col4">
+                <cellValueFactory>
+                    <PropertyValueFactory property="Origen"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="DESTINATION" fx:id="col5">
+                <cellValueFactory>
+                    <PropertyValueFactory property="Destino"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="SCHEDULED DATE" fx:id="col6">
+                <cellValueFactory>
+                    <PropertyValueFactory property="FechaProgramada"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="OBSERVATIONS" fx:id="col7">
+                <cellValueFactory>
+                    <PropertyValueFactory property="Observaciones"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="STATUS" fx:id="col8">
+                <cellValueFactory>
+                    <PropertyValueFactory property="Estatus"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="CREATION DATE" fx:id="col9">
+                <cellValueFactory>
+                    <PropertyValueFactory property="FechaCreacion"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="ATTENDED" fx:id="col10">
+                <cellValueFactory>
+                    <PropertyValueFactory property="Atendio"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="ADDITIONAL COST" fx:id="col11">
+                <cellValueFactory>
+                    <PropertyValueFactory property="CostoAdicional"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="FINAL COST" fx:id="col12">
+                <cellValueFactory>
+                    <PropertyValueFactory property="CostoFinal"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+</VBox>

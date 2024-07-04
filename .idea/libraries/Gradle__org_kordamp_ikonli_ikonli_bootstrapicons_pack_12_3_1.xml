@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.kordamp.ikonli:ikonli-bootstrapicons-pack:12.3.1" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.kordamp.ikonli" artifactId="ikonli-bootstrapicons-pack" version="12.3.1" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.kordamp.ikonli/ikonli-bootstrapicons-pack/12.3.1/8b0dc79a85c903a53792fee21aa696944ade762a/ikonli-bootstrapicons-pack-12.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.kordamp.ikonli/ikonli-bootstrapicons-pack/12.3.1/e3a345711b9d9530c24127e9ae8430746f5bcdf1/ikonli-bootstrapicons-pack-12.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

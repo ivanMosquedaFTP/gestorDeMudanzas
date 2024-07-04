@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.itextpdf:font-asian:7.2.3" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.itextpdf" artifactId="font-asian" version="7.2.3" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.itextpdf/font-asian/7.2.3/4b0034f03ef8cf7f9f2a134189ac32d39e757d6d/font-asian-7.2.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

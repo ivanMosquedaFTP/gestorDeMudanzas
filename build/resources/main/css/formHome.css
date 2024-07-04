@@ -1,0 +1,55 @@
+/* Form Home */
+
+.lb-title-Home{
+    -fx-font-size:40px;
+    -fx-font-weight:700;
+    -fx-text-fill:#232323;
+}
+
+
+.sub-title-Home{
+     -fx-font-size:30px;
+     -fx-font-weight:700;
+     -fx-text-fill:#000;
+}
+
+.lb-text-Home{
+     -fx-font-size:20px;
+     -fx-text-fill:#fff;
+     -fx-font-weight:700;
+}
+
+
+.card{
+     -fx-background-color: linear-gradient(to right, #FFC90E,#FFCB00 );
+     -fx-effect: dropshadow(gaussian, #c8c8c8, 10, 0.2, 0, 0);
+     -fx-background-radius:12px;
+}
+
+.wrap-icon-media{
+    -fx-padding:10px;
+    -fx-background-color:#232323;
+    -fx-background-radius:12px;
+}
+
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-color: #808080;
+}
+
+.scroll-pane .scroll-bar:horizontal{
+    -fx-background-color: #808080;
+}
+
+.scroll-pane .scroll-bar:horizontal .thumb {
+    -fx-background-color: #606060;
+}
+
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: #606060;
+}
+
+.scroll-pane .scroll-bar:vertical .increment-button,
+.scroll-pane .scroll-bar:vertical .decrement-button {
+    -fx-background-color: #808080;
+}

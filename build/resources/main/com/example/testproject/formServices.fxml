@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"  fx:id="form_Service">
+    <VBox alignment="CENTER" spacing="10" styleClass="wrap-form-general">
+        <HBox alignment="CENTER_LEFT">
+            <Label text="+ Add" styleClass="lb-title-Form"/>
+        </HBox>
+        <VBox style="-fx-padding:5px 0 0 0;">
+            <Label text="Description" styleClass="lbl-subTitle-form"/>
+            <TextArea promptText="Type Here..." styleClass="txtArea-description" wrapText="true" fx:id="txtDescription"/>
+        </VBox>
+        <HBox spacing="10">
+            <VBox HBox.hgrow="ALWAYS">
+                <Label text="Image" styleClass="lbl-subTitle-form"/>
+                <Button  maxWidth="Infinity" fx:id="btnImage" styleClass="btn-Image">
+                    <graphic>
+                        <FontIcon iconLiteral="bi-card-image" iconSize="20" iconColor="#6c6d80"/>
+                    </graphic>
+                </Button>
+            </VBox>
+        </HBox>
+        <HBox spacing="10">
+            <VBox>
+                <Label text="Status" styleClass="lbl-subTitle-form"/>
+                <ComboBox fx:id="cmbStatus" styleClass="txt-form" style="-fx-padding:6px;" value="On">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="On"/>
+                            <String fx:value="Off"/>
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+            </VBox>
+            <VBox HBox.hgrow="ALWAYS">
+                <Label text="Cost" styleClass="lbl-subTitle-form"/>
+                <TextField  promptText="999,999,999" styleClass="txt-form" fx:id="txtCost"/>
+            </VBox>
+        </HBox>
+        <Button text="Save" styleClass="btn-Save" maxWidth="Infinity" fx:id="btnAddService"/>
+    </VBox>
+    <HBox alignment="CENTER_LEFT" style="-fx-padding:10px 0 0 0;">
+        <Button fx:id="btnReturn" styleClass="btn-Return">
+            <graphic>
+                <FontIcon iconLiteral="bi-chevron-left" iconSize="20" iconColor="#575757"/>
+            </graphic>
+        </Button>
+    </HBox>
+</VBox>

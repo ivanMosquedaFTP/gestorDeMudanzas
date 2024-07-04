@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<?import javafx.scene.image.ImageView?>
+
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" spacing="20">
+    <ScrollPane fitToHeight="true" fitToWidth="true" style="-fx-background-color:transparent; -fx-padding:0 50px;">
+    <VBox style="-fx-background-color:#fff;" spacing="30">
+        <VBox alignment="CENTER_LEFT">
+            <Label  styleClass="lb-title-Home" fx:id="lblName"/>
+            <HBox spacing="10" alignment="CENTER">
+                <VBox styleClass="card">
+                    <HBox alignment="CENTER">
+                        <VBox  alignment="CENTER" HBox.hgrow="ALWAYS">
+                            <Label text="Thanks for Sign In!" styleClass="sub-title-Home"/>
+                            <Label styleClass="lb-text-Home" text="
+                            We're glad to see you here, ready to find out&#10;
+                            everything you need to know about moving.&#10;
+                            If you are planning to change your home,&#10;
+                            business or office, you are in the right place." wrapText="true"
+                                   minWidth="600"/>
+                        </VBox>
+                        <VBox alignment="CENTER">
+                            <ImageView fx:id="imgCard_1" fitWidth="350" fitHeight="400" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 20, 0.3, 0, 0);"/>
+                        </VBox>
+                    </HBox>
+                </VBox>
+            </HBox>
+        </VBox>
+        <VBox>
+            <VBox spacing="10" alignment="CENTER_LEFT" style="-fx-padding:10px; -fx-border-width:2 0 0 0; -fx-border-color:#f1f1f1;">
+                <Label text="- Information Company:" style="-fx-font-weight:700; -fx-font-size:15px; -fx-text-fill:#1E2C54;"/>
+                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <Label styleClass="wrap-icon-media">
+                        <graphic>
+                            <FontIcon iconLiteral="bi-envelope-fill" iconSize="20" iconColor="white"/>
+                        </graphic>
+                    </Label>
+                    <VBox spacing="3">
+                        <Label text="Email" style="-fx-font-weight:700; -fx-font-size:13px;"/>
+                        <Label text="" style="-fx-text-fill:#BFBFBF;" fx:id="lblEmail"/>
+                    </VBox>
+                </HBox>
+                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <Label styleClass="wrap-icon-media">
+                        <graphic>
+                            <FontIcon iconLiteral="bi-phone-fill" iconSize="20" iconColor="white"/>
+                        </graphic>
+                    </Label>
+                    <VBox spacing="3">
+                        <Label text="Mobil Phone" style="-fx-font-weight:700; -fx-font-size:13px;"/>
+                        <Label text="" style="-fx-text-fill:#BFBFBF;" fx:id="lblMobil"/>
+                    </VBox>
+                </HBox>
+                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <Label styleClass="wrap-icon-media">
+                        <graphic>
+                            <FontIcon iconLiteral="bi-telephone-fill" iconSize="20" iconColor="white"/>
+                        </graphic>
+                    </Label>
+                    <VBox spacing="3">
+                        <Label text="Phone" style="-fx-font-weight:700; -fx-font-size:13px;"/>
+                        <Label text="" style="-fx-text-fill:#BFBFBF;" fx:id="lblPhone"/>
+                    </VBox>
+                </HBox>
+                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <Label styleClass="wrap-icon-media">
+                        <graphic>
+                            <FontIcon iconLiteral="bi-facebook" iconSize="20" iconColor="white"/>
+                        </graphic>
+                    </Label>
+                    <VBox spacing="3">
+                        <Label text="Social Media" style="-fx-font-weight:700; -fx-font-size:13px;"/>
+                        <Label text="" style="-fx-text-fill:#BFBFBF;" fx:id="lblSocial"/>
+                    </VBox>
+                </HBox>
+            </VBox>
+        </VBox>
+    </VBox>
+    </ScrollPane>
+</VBox>

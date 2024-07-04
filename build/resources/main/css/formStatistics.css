@@ -1,0 +1,65 @@
+/*  Form Charts */
+
+.btnReport{
+  -fx-background-color:#f1f1f1;
+  -fx-background-radius:10px;
+  -fx-font-size:13px;
+  -fx-font-weight:700;
+  -fx-padding:10px 20px;
+  -fx-cursor:hand;
+}
+
+.btnReport:hover{
+ -fx-background-color:#D5D5D5;
+}
+
+.chart-title {
+   -fx-text-fill: #6D6D6D;
+   -fx-font-size: 20px;
+   -fx-font-weight:700;
+ }
+
+
+ .chart-pie-label-line {
+     -fx-stroke: #232323;
+     -fx-fill: #8b4513;
+ }
+
+ .chart-pie-label {
+     -fx-fill: #232323;
+     -fx-font-size: 1em;
+ }
+ .chart-legend {
+    -fx-background-color:  #f1f1f1;
+    -fx-stroke: #daa520;
+ }
+
+
+.chart-plot-background {
+    -fx-background-color: #fff;
+}
+
+ .default-color0.chart-pie { -fx-pie-color: #FFDF00; }
+ .default-color1.chart-pie { -fx-pie-color: #28BCCC; }
+ .default-color2.chart-pie { -fx-pie-color: #CE8ABF; }
+ .default-color3.chart-pie { -fx-pie-color: #FEA730; }
+ .default-color4.chart-pie { -fx-pie-color: #3C444C; }
+
+
+.btn-Statistics{
+   -fx-background-color:#fff;
+   -fx-border-width:2px;
+   -fx-border-color:#f1f1f1;
+   -fx-border-radius:50%;
+   -fx-background-radius:50%;
+   -fx-padding:15px 20px;
+   -fx-text-fill:#232323;
+   -fx-font-size:15px;
+   -fx-font-weight:700;
+   -fx-cursor:hand;
+}
+
+
+.btn-Statistics:hover{
+     -fx-background-color:#f1f1f1;
+}
