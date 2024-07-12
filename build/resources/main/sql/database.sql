@@ -1,0 +1,1 @@
+CREATE TABLE mensaje(id_mensaje serial PRIMARY KEY, id_usuario INTEGER REFERENCES usuario(id_usuario), id_status INTEGER REFERENCES status(id_status), mensaje TEXT, fecha_envio DATE DEFAULT now(), id_recibe INTEGER REFERENCES usuario(id_usuario);

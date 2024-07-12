@@ -6,14 +6,11 @@ import java.sql.*;
 public class EmpleadoDatos {
     ConexionSQL conexionSQL = new ConexionSQL();
 
-    public void insertarEmpleado(String nombre, String login, String contraseña, String telefono, String correo)
-            throws SQLException {
-
+    public void insertarEmpleado(String nombre, String login, String contraseña, String telefono, String correo) throws SQLException {
         String url= conexionSQL.url;
         String username=conexionSQL.user;
         String password=conexionSQL.password;
         try (Connection conn = DriverManager.getConnection(url, username, password)) {
-
             String sql = "INSERT INTO Usuario(Nombre, Login, Contraseña, Telefono, Correo, IdTipo) VALUES (?, ?, ?, ?, ?, 3)";
 
             PreparedStatement statement = conn.prepareStatement(sql);
@@ -33,14 +30,11 @@ public class EmpleadoDatos {
         }
     }
 
-    public void editarEmpleado(String nombre, String login, String contraseña, String telefono, String correo, int idEmpleado)
-            throws SQLException {
-
+    public void editarEmpleado(String nombre, String login, String contraseña, String telefono, String correo, int idEmpleado) throws SQLException {
         String url = conexionSQL.url;
         String username = conexionSQL.user;
         String password = conexionSQL.password;
         try (Connection conn = DriverManager.getConnection(url, username, password)) {
-
             String sql = "UPDATE Usuario Set nombre=?,login=?,contraseña=?,telefono=?,correo? where IdUsuario=?";
 
             PreparedStatement statement = conn.prepareStatement(sql);
@@ -50,9 +44,6 @@ public class EmpleadoDatos {
             statement.setString(4, telefono);
             statement.setString(5, correo);
             statement.setString(6, String.valueOf(idEmpleado));
-
-
-
 
             int rowsUpdated = statement.executeUpdate();
             if (rowsUpdated > 0) {
@@ -70,12 +61,10 @@ public class EmpleadoDatos {
         String username = conexionSQL.user;
         String password = conexionSQL.password;
         try (Connection conn = DriverManager.getConnection(url, username, password)) {
-
             String sql = "DELETE FROM Usuario WHERE IdUsuario=?";
 
             PreparedStatement statement = conn.prepareStatement(sql);
             statement.setString(1, String.valueOf(idEmpleado));
-
 
             int rowsDeleted = statement.executeUpdate();
             if (rowsDeleted > 0) {
